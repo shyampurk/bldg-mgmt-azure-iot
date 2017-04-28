@@ -1,0 +1,25 @@
+#systemAdmin {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg); /* Standard syntax */
+}
+#directorRoom {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg); /* Standard syntax */
+}
+#reception {
+    -ms-transform: rotate(-270deg); /* IE 9 */
+    -webkit-transform: rotate(-270deg); /* Safari */
+    transform: rotate(-270deg); /* Standard syntax */
+}
+#mainHall {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+}
+#meetingRoom {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+}
