@@ -1,0 +1,34 @@
+    .overlay {
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10;
+        width:100%;
+        height:100%;
+        opacity:1;
+        background: #e6e6e6;
+        display:block; 
+        background-image: url('../img/bg.jpg');
+        background-size: cover;
+    }
+    
+    #messageList-widget{
+        height: 440px;
+        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden; 
+    }
+   
+    #onlineUser-widget{
+        height: 490px;
+    }
+    .btn-primary {
+        color: black;
+        background-color: #ceeae9;
+        border-color: #357ebd; 
+    }
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+        color: white;
+        background-color: teal;
+        border-color: #285e8e; 
+    }
