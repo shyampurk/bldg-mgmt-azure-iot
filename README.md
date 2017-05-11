@@ -14,14 +14,16 @@ Select “IoT Hub” under “Internet of Things”.
 
 ## Step 3 : 
 Fill the following fields to create the service
-	Name - Give any name for your IotHub.
-	Pricing and scale tier - For Free accounts default is “S1-standard”, you can go for other options by choosing them.
-	IoT Hub units - IoT Hub units determine your daily message quota. If you want more you can purchase them, for free trail default is 1.
-	Device-to-cloud partitions - The number of partitions for device-to-cloud messages by default it will be 4.
-	Subscription - Select subscription type ,for trial account it will be Free Trial.
-	Resource group - Create a new Resource group for your service.
-	Location - Select a location that is near to you.
-	You can choose the option “Pin to dashboard” to show it on the dashboard.
+
+	1.Name - Give any name for your IotHub.
+	2.Pricing and scale tier - For Free accounts default is “S1-standard”, you can go for other options by choosing them.
+	3.IoT Hub units - IoT Hub units determine your daily message quota. If you want more you can purchase them, for free trail default is 1.
+	4.Device-to-cloud partitions - The number of partitions for device-to-cloud messages by default it will be 4.
+	5.Subscription - Select subscription type ,for trial account it will be Free Trial.
+	6.Resource group - Create a new Resource group for your service.
+	7.Location - Select a location that is near to you.
+	8.You can choose the option “Pin to dashboard” to show it on the dashboard.
+	
 Then click on the “Create” button
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_3.png)
@@ -61,20 +63,17 @@ Open the newly created iothub, and click on the overview, and save the "Hostname
 ## Step 1 : 
 Open the [code](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/createDevice/createdevice.js)
 
-## Step 2 :
-In the line number 6 enter the Hostname you got in the above step 8.
+	1.In line number 6 enter the Hostname you got in the above step 8.
+	2.In line number 8 enter the "primarykey" out of those keys you got it in the above step 7.
 
-## Step 3 :
-In the line number 8 enter the "primarykey" out of those keys you got it in the above step 7.
-
-## Step 4 : 
+## Step 2 : 
 Then run the code using command
 
 		node createdevice.js
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/code/azc1.png)
 
-## Step 5 : 
+## Step 3 : 
 Save those device keys
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_9.png)
