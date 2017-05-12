@@ -1,4 +1,4 @@
-# Building Management Simulation - Azure IoT hub
+# Building Management Chat - Azure IoT hub
 
 ## Steps to launch the App
 ## STEP 1 :
