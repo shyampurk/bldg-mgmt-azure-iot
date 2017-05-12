@@ -90,8 +90,8 @@ Open the code azure-chat/routes/[index.js](https://github.com/shyampurk/bldg-mgm
 Open the code azure-building/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/routes/index.js)
 
 	1) line number 18 - hostname
-	2) line number 86 - deviceid 1 (bulb 1)
-	3) line number 88 - deviceid 2 (bulb 2)
+	2) line number 86 - devicekey 1 (bulb 1)
+	3) line number 88 - devicekey 2 (bulb 2)
 
 
 For more information regarding the creation of the IoT Hub please go through this [page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted)
