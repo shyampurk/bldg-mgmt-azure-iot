@@ -61,7 +61,7 @@ Open the newly created iothub, and click on the overview, and save the "Hostname
 # Creating the Devices
 
 ## Step 1 : 
-Open the [code](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/createDevice/createdevice.js)
+Open the code createDevice/[createdevice.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/createDevice/createdevice.js)
 
 	1.In line number 6 enter the Hostname you got in the above step 8.
 	2.In line number 8 enter the "primarykey" out of those keys you got it in the above step 7.
@@ -82,13 +82,15 @@ You can see the Devices created in the azure iot hub.
 
 # code changes
 
-in this [code](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/routes/index.js)
+Open the code azure-chat/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/routes/index.js)
 
 	1) line number 17 hostname
 	2) line number 20 primarykey
 	
-in this [code](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/public/javascript/chat.js)
+Open the code azure-chat/public/javascript/[chat.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/public/javascript/chat.js)
 
+	1)
+	2)
 
 
 For more information regarding the creation of the IoT Hub please go through this [page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted)
