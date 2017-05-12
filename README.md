@@ -84,13 +84,14 @@ You can see the Devices created in the azure iot hub.
 
 Open the code azure-chat/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/routes/index.js)
 
-	1) line number 17 hostname
-	2) line number 20 primarykey
+	1) line number 17 - hostname
+	2) line number 20 - primarykey
 	
-Open the code azure-chat/public/javascript/[chat.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/public/javascript/chat.js)
+Open the code azure-building/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/routes/index.js)
 
-	1)
-	2)
+	1) line number 18 - hostname
+	2) line number 86 - deviceid 1 (bulb 1)
+	3) line number 88 - deviceid 2 (bulb 2)
 
 
 For more information regarding the creation of the IoT Hub please go through this [page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted)
