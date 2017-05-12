@@ -2,8 +2,8 @@ $(document).ready(function () {
 
 // Initializing Variables
 
-	var chatPublishChannel = 'building_device_status_chat',
-		chatSubscribeChannel = 'building_device_status_chat',
+	var chatPublishChannel = 'pubsub_device_status_chat',
+		chatSubscribeChannel = 'pubsub_device_status_chat',
 	    
 	    inputMessage = $('#inputMessage'),
 	    inputMessageSubmit = $("#inputMessageSubmit"),

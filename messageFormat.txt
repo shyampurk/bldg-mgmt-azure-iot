@@ -1,0 +1,117 @@
+/****************************************************************
+
+		BUILDING MGMT - AZURE IOT - CHAT
+
+****************************************************************/
+
+Channels Used:
+
+			1.publish_device_status 
+			2.pubsub_device_status_chat
+
+
+Building MgMt Simulation :
+===========================
+
+Request Message Format (Pubnub & Azure):
+
+		channel      : publish_device_status
+		
+		bulb status  :
+						1. ON
+						2. OFF
+						3. MALFUNCTION
+
+		device names :
+						1. bulb1
+						2. bulb2
+
+		request :   {
+						deviceId: < DEVICE NAME >, 
+						lightstatus: < BULB STATUS >
+					}
+
+		example :   {
+						deviceId: 'bulb1', 
+						lightstatus: bulb1Status
+					}
+
+Building MgMt Chat page :
+===========================
+
+	1.Request Message Format (Device message from azure to chat window):
+
+			channel      : pubsub_device_status_chat
+			
+			bulb status  :
+							1. ON
+							2. OFF
+							3. MALFUNCTION
+
+			device names :
+							1. bulb1
+							2. bulb2
+
+			request :   {
+	                        "command":"message",
+	                        "user": < DEVICE NAME >,
+	                        "role":"device",
+	                        "userMessage": < BULB STATUS >
+	                    }
+
+			example :   {
+	                        "command":"message",
+	                        "user":"bulb1",
+	                        "role":"device",
+	                        "userMessage": "ON"
+	                    }
+
+	2.Request Message Format (Facility mgmt team chat):
+
+		Request Format : {
+	                        "command": < COMMAND >,
+	                        "user": < USER NAME >,
+	                        "role": < USER NAME >,
+	                        "userMessage": < USER MESSAGE >
+	                    }
+
+	    Commands Used :
+	    				1. join
+	    				2. message
+	    				3. leave
+
+
+			1. New user join :
+
+					channel      : pubsub_device_status_chat
+
+					example :   {
+			                        "command":"join",
+			                        "user":"John",
+			                        "role":"Facility Mgmt Team",
+			                        "userMessage": "Hi there"
+			                    }
+
+			2. User message :
+
+					channel      : pubsub_device_status_chat
+
+					example :   {
+			                        "command":"message",
+			                        "user":"John",
+			                        "role":"Facility Mgmt Team",
+			                        "userMessage": "Hi there"
+			                    }
+
+			3. User Leaving Chat :
+
+					channel      : pubsub_device_status_chat
+
+					example :   {
+			                        "command":"leave",
+			                        "user":"John",
+			                        "role":"Facility Mgmt Team",
+			                        "userMessage": "Hi there"
+			                    }
+
+

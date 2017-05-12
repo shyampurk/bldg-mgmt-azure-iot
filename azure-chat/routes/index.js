@@ -53,7 +53,7 @@ var sendMessage = function (message) {
 
     pubnub.publish({
         message: chatMessage,
-        channel: 'building_device_status_chat',
+        channel: 'pubsub_device_status_chat',
         storeInHistory: true,
     });
 	console.log('Message received: ',JSON.stringify(message.body));

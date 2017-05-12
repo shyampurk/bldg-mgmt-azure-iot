@@ -32,7 +32,7 @@ var pubnub = new PubNub({
 
 /*************************************************************
 	Function 	: Pubnub Listener Function
-	Channel  	: 'devicePublishChannel'
+	Channel  	: 'publish_device_status'
 	Description : Listens on the subscribed channel and passes 
 				  received message to sendToAzure function 
 **************************************************************/
@@ -41,6 +41,7 @@ pubnub.addListener({
         // handle message
         var channelName = m.channel; // The channel for which the message belongs
         var msg = m.message; // The Payload
+        console.log(msg)
         sendToAzure(msg)
     }
 })
@@ -59,14 +60,14 @@ function printResultFor(op) {
 
 /****************************************************************
 	Function 	: Load Home page (building)
-	Channel  	: 'devicePublishChannel'
+	Channel  	: 'publish_device_status'
 	Description : Listens on the subscribed channel and 
 				  when get request received loads the home page
 *****************************************************************/
 
 router.get('/',function(request,response){
 	pubnub.subscribe({
-	    channels: ['devicePublishChannel']
+	    channels: ['publish_device_status']
 	})
 	response.status(200).render('building');
 });

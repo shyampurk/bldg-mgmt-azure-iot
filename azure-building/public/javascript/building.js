@@ -22,16 +22,17 @@ var pubnub = new PubNub({
 /***************************************************************
 	function 	: pub_publish()
 	Params 		: pub_msg --> publish message
-	Channel 	: 'devicePublishChannel'
+	Channel 	: 'publish_device_status'
 	Description : Publishes the bulb status to the nodejs server
 
 ****************************************************************/
 function pub_publish(pub_msg){
 	pubnub.publish({
         message: pub_msg,
-        channel: 'devicePublishChannel',
+        channel: 'publish_device_status',
         storeInHistory: true, //override default storage options
     });
+    console.log(pub_msg)
 };
 
 $(document).ready(function() {
