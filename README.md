@@ -69,6 +69,8 @@ Open the code createDevice/[createdevice.js](https://github.com/shyampurk/bldg-m
 ## Step 2 : 
 Then run the code using command
 
+		sudo npm install -g azure-iothub
+
 		node createdevice.js
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/code/azc1.png)
