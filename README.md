@@ -105,7 +105,7 @@ Save those device keys appearing in the console output of the code execution.
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_9.png)
  
-You can see that the devices "bulb1" and "bulb2" are created in the Azure IoT hub.
+If you now click on the "Device Explorer" in the side menu, you can see that the devices "bulb1" and "bulb2" are created in you Azure IoT service.
 
 # code changes
 
