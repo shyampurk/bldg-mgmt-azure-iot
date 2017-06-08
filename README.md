@@ -111,28 +111,19 @@ If you now click on the "Device Explorer" in the side menu, you can see that the
 
 The building simulation web page is serverd by a Node.js instance. Check out the [building simulation Node.js project source](https://github.com/shyampurk/bldg-mgmt-azure-iot/tree/master/azure-building).
 
-Refer the [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server. 
+Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server. 
 
 ## Launch chat UI
 
 The chat UI web page is serverd by yet another Node.js instance. Check out the [chat UI Node.js project source](https://github.com/shyampurk/bldg-mgmt-azure-iot/tree/master/azure-chat).
 
-Refer the [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server.
+Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server.
 
 
 
-# code changes
+## Application Demo
 
-Open the code azure-chat/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/routes/index.js)
-
-	1) line number 17 - hostname
-	2) line number 20 - primarykey
-	
-Open the code azure-building/routes/[index.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/routes/index.js)
-
-	1) line number 18 - hostname
-	2) line number 86 - devicekey 1 (bulb 1)
-	3) line number 88 - devicekey 2 (bulb 2)
+Here is how two users interact with two devices via the chat UI of this application. 
 
 
 For more information regarding the creation of the IoT Hub please go through this [page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted)
