@@ -1,6 +1,6 @@
 # Building Simulation - Azure IoT Hub
 
-## Steps to launch the App
+## Steps to launch building simulation Node.js app
 
 ### STEP 1 :
 Download/fork the source code of this repository and update the keys at the application server side and client side as follows
