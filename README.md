@@ -125,6 +125,7 @@ Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/m
 
 Here is how two users interact with two devices via the chat UI of this application. 
 
+![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/IoT-Chatbot-Interaction.gif)
 
 For more information regarding the creation of the IoT Hub please go through this [page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted)
 
