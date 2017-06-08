@@ -21,7 +21,7 @@ Request Message Format (Pubnub & Azure):
 		bulb status  :
 						1. ON
 						2. OFF
-						3. MALFUNCTION
+						3. Malfunction
 
 		device names :
 						1. bulb1
@@ -89,8 +89,7 @@ Chat UI page :
 					example :   {
 			                        "command":"join",
 			                        "user":"John",
-			                        "role":"Facility Mgmt Team",
-			                        "userMessage": ""
+			                        "role":"Facility Mgmt Team"
 			                    }
 
 			2. User sends chat message :
@@ -111,8 +110,7 @@ Chat UI page :
 					example :   {
 			                        "command":"leave",
 			                        "user":"John",
-			                        "role":"Facility Mgmt Team",
-			                        "userMessage": ""
+			                        "role":"Facility Mgmt Team"
 			                    }
 
 
