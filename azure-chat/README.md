@@ -1,26 +1,29 @@
-# Building Management Chat - Azure IoT hub
+# Chat UI - Azure IoT hub
 
-## Steps to launch the App
-## STEP 1 :
-Download/fork the source code of this repository and update the keys at the application server side and client side
+## Steps to launch the Chat UI App
 
-### Pubnub Keys: 
-Change the PubNub keys in the following files
+### STEP 1 :
+Download/fork the source code of this repository and update the keys at the application server side and client side as follows.
+
+#### Pubnub Keys: 
+Change the PubNub keys in the following files. You can use "demo" as the key name or you can use app keys from your PubNub subscription.
 
     1. routes/index.js --> line numbers 24,25
     2. public/javascript/chat.js --> line numbers 21,22
 
-### Azure Keys:
-Change the Azure keys obtained from executing [createdevice.js](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/createDevice/createdevice.js) program ,in the following files
+#### Azure service Keys:
+You have to retrieve your Azure IoT service host name and primary key which were generated as part of step 5 & 6 under "Create Azure IoT Hub service" section of the main README. 
 
-    1.routes/index.js --> line numbers 17 (host name)
-    2.routes/index.js --> line numbers 20 (primary key)
+Update the following files in this Node.js package as follows
+
+    1.routes/index.js --> line numbers 17 -> Update the hostname variable with your Azure IoT service hostname 
+    2.routes/index.js --> line numbers 20 -> Update the accesskey variable with your Azure IoT service primary key
     
-## STEP 2 :
+### STEP 2 :
 
-To RUN the server
+To the server
 
-1.This application require nodejs. To download and install nodejs on the hosting server, follow this link.
+1.First ensure that the Node.js is installed. To download and install nodejs on the hosting server, follow this link.
 
     https://nodejs.org/en/download/
 
@@ -32,4 +35,4 @@ To RUN the server
 
     http://127.0.0.1:3021/
 
-Alternatively you can host the application on a cloud server and access it via its IP Address.
+Alternatively you can also host the application on a cloud server and access it via its IP Address.
