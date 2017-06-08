@@ -101,11 +101,25 @@ Then run the code using Node.js command
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/code/azc1.png)
 
 ### Step 3 : 
-Save those device keys appearing in the console output of the code execution.
+Save those device keys appearing in the console output in the text file.
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_9.png)
  
 If you now click on the "Device Explorer" in the side menu, you can see that the devices "bulb1" and "bulb2" are created in you Azure IoT service.
+
+## Launch building simulation
+
+The building simulation web page is serverd by a Node.js instance. Check out the [building simulation Node.js project source](https://github.com/shyampurk/bldg-mgmt-azure-iot/tree/master/azure-building).
+
+Refer the [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server. 
+
+## Launch chat UI
+
+The chat UI web page is serverd by yet another Node.js instance. Check out the [chat UI Node.js project source](https://github.com/shyampurk/bldg-mgmt-azure-iot/tree/master/azure-chat).
+
+Refer the [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server.
+
+
 
 # code changes
 
