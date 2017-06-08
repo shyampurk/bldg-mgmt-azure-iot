@@ -56,13 +56,13 @@ Then click on the “Create” button
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_4.png)
 
 
-After some time, you can see the Created service.
+After some time, you can see the newly created Azure IoT hub service.
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_5.png)
 
 
 ### Step 4 : 
-Get the generated keys of your newly created IoT service. 
+Get the generated keys of your newly created service. 
 	
 	1. Click on the service you have created.
 	2. Click on the “Shared access policies”.
@@ -77,7 +77,7 @@ Copy those keys and connection strings into a text file and save them. These wil
 
 
 ### Step 6 : 
-Open the newly created iothub, and click on the "Overview", and save the "Hostname".
+Open the newly created iothub, and click on the "Overview", and save the "Hostname" also to the text file.
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_8.png)
 
 
@@ -101,7 +101,7 @@ Then run the code using Node.js command
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/code/azc1.png)
 
 ### Step 3 : 
-Save those device keys appearing in the console output in the text file.
+Save those device keys appearing in the console output in a text file.
 
 ![alt-tag](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/screenshots/azure/acb_9.png)
  
