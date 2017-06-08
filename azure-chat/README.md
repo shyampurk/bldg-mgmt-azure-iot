@@ -8,8 +8,8 @@ Download/fork the source code of this repository and update the keys at the appl
 #### Pubnub Keys: 
 Change the PubNub keys in the following files. You can use "demo" as the key name or you can use app keys from your PubNub subscription.
 
-    1. routes/index.js --> line numbers 24,25
-    2. public/javascript/chat.js --> line numbers 21,22
+    1. routes/index.js --> line numbers 24,25 -> Update variable pub_key and sub_key with your PubNub publish key and subscribe key
+    2. public/javascript/chat.js --> line numbers 21,22 -> Update variable pub_key and sub_key with your PubNub publish key and subscribe key
 
 #### Azure service Keys:
 You have to retrieve your Azure IoT service host name and primary key which were generated as part of step 5 & 6 under "Create Azure IoT Hub service" section of the main README. 
