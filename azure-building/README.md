@@ -12,7 +12,7 @@ Change the PubNub keys in the following files. You can use "demo" as the key nam
     2. public/javascript/building.js --> line numbers 13,14 -> Update variable pub_key and sub_key with your PubNub publish key and subscribe key
 
 #### Azure Keys:
-You have to retrieve your Azure IoT service host name (generated as part of step 6 under "Create Azure IoT Hub service" section of the main README) and device keys for "bulb1" & "bulb2" (generated as part of step 2 & 3 under "Register device with Azure IoT" section of the main README).
+You have to retrieve your Azure IoT service host name (generated as part of step 6 under "Create Azure IoT Hub service" section of the main README) and device keys for "bulb1" & "bulb2" (generated as part of step 2 under "Register device with Azure IoT" section of the main README).
 
     1.routes/index.js --> line numbers 18 -> Update the hostname variable with your Azure IoT service hostname 
     2.routes/index.js --> line numbers 86 -> Update the devickey variable with the device key of "bulb1" device 
