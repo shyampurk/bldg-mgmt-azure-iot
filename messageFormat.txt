@@ -47,7 +47,7 @@ Chat UI page :
 			bulb status  :
 							1. ON
 							2. OFF
-							3. MALFUNCTION
+							3. Malfunction
 
 			device names :
 							1. bulb1
