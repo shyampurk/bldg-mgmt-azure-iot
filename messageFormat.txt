@@ -4,14 +4,15 @@
 
 ****************************************************************/
 
-Channels Used:
+PubNub Channels Used:
 
 			1.publish_device_status 
 			2.pubsub_device_status_chat
 
 
-Building MgMt Simulation :
+Building Simulation :
 ===========================
+Messages send from device to chatbot in case of a status change in the device 
 
 Request Message Format (Pubnub & Azure):
 
@@ -26,20 +27,20 @@ Request Message Format (Pubnub & Azure):
 						1. bulb1
 						2. bulb2
 
-		request :   {
+		request format :        {
 						deviceId: < DEVICE NAME >, 
 						lightstatus: < BULB STATUS >
 					}
 
-		example :   {
+		example :               {
 						deviceId: 'bulb1', 
-						lightstatus: bulb1Status
+						lightstatus: 'ON'
 					}
 
-Building MgMt Chat page :
+Chat UI page :
 ===========================
 
-	1.Request Message Format (Device message from azure to chat window):
+	1.Message Format when device sends a message to chat (via Azure):
 
 			channel      : pubsub_device_status_chat
 			
@@ -52,7 +53,7 @@ Building MgMt Chat page :
 							1. bulb1
 							2. bulb2
 
-			request :   {
+			request format :   {
 	                        "command":"message",
 	                        "user": < DEVICE NAME >,
 	                        "role":"device",
@@ -66,8 +67,8 @@ Building MgMt Chat page :
 	                        "userMessage": "ON"
 	                    }
 
-	2.Request Message Format (Facility mgmt team chat):
-
+	2.Message Format when user (Facility mgmt staff) sends a chat :
+          
 		Request Format : {
 	                        "command": < COMMAND >,
 	                        "user": < USER NAME >,
@@ -75,7 +76,7 @@ Building MgMt Chat page :
 	                        "userMessage": < USER MESSAGE >
 	                    }
 
-	    Commands Used :
+	        Commands Used :
 	    				1. join
 	    				2. message
 	    				3. leave
@@ -89,10 +90,10 @@ Building MgMt Chat page :
 			                        "command":"join",
 			                        "user":"John",
 			                        "role":"Facility Mgmt Team",
-			                        "userMessage": "Hi there"
+			                        "userMessage": ""
 			                    }
 
-			2. User message :
+			2. User sends chat message :
 
 					channel      : pubsub_device_status_chat
 
@@ -111,7 +112,7 @@ Building MgMt Chat page :
 			                        "command":"leave",
 			                        "user":"John",
 			                        "role":"Facility Mgmt Team",
-			                        "userMessage": "Hi there"
+			                        "userMessage": ""
 			                    }
 
 
