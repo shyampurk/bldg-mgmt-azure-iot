@@ -1,4 +1,4 @@
-# IoT Chatbot for facilities management using Azure IoT Hub
+# IoT Chatbot for Facilities Management using Azure IoT Hub
 
 This is a concept demonstration for building a human to machine chat interface using the Microsoft Azure IoT Hub.
 This repository contains the accompanying source code for this blog post which explains this concept.
