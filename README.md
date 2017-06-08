@@ -1,7 +1,7 @@
 # IoT Chatbot for Facilities Management using Azure IoT Hub
 
 This is a concept demonstration for building a human to machine chat interface using the Microsoft Azure IoT Hub.
-This repository contains the accompanying source code for this blog post which explains this concept.
+This repository contains the accompanying source code for this [blog post](http://radiostud.io/facilities-management-iot-chatbot-azure-iot) which explains this concept.
 
 There are four major tasks to launch this application. 
 
@@ -117,7 +117,7 @@ Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/m
 
 The chat UI web page is serverd by yet another Node.js instance. Check out the [chat UI Node.js project source](https://github.com/shyampurk/bldg-mgmt-azure-iot/tree/master/azure-chat).
 
-Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-building/README.md) and follow the steps to launch the server.
+Refer this [README file](https://github.com/shyampurk/bldg-mgmt-azure-iot/blob/master/azure-chat/README.md) and follow the steps to launch the server.
 
 
 
