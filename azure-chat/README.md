@@ -21,13 +21,13 @@ Update the following files in this Node.js package as follows
     
 ### STEP 2 :
 
-To the server
+To run the server
 
 1.First ensure that the Node.js is installed. To download and install nodejs on the hosting server, follow this link.
 
     https://nodejs.org/en/download/
 
-2.Open the " azure-chat " directory in terminal, install all the node package dependencies and run the node application as
+2.Open this " azure-chat " directory in terminal, install all the node package dependencies and run the node application as
 
     node azurechat.js
 
